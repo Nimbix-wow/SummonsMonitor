@@ -1,4 +1,4 @@
--- ===============================================================================
+﻿-- ===============================================================================
 
 -- By Zayla of Dethecus
 
@@ -15,7 +15,7 @@ SummonsMonitor_Messages.announceSoulst = " <%t> under soulstoning!"; --"I am sav
 SummonsMonitor_CoolOffTime         =  20;   -- Seconds
 SummonsMonitor_ClearSummonedTime   = 600;   -- Seconds
 
-BINDING_HEADER_SUMMONSMONITORHEADER = "Summons Monitor -- by Zayla";
+BINDING_HEADER_SUMMONSMONITORHEADER = "Summons Monitor by Zayla - NimbixEdit v2";
 BINDING_NAME_SUMMONSMONITOR_TOGGLEWINDOW = "Toggle window";
 BINDING_NAME_SUMMONSMONITOR_SUMMONNEXT = "Summon next";
 
@@ -29,7 +29,7 @@ local SummonsList = {};
 --   .time
 -- .name is the name of the player
 -- .status is one of:
---   REQUEST   -- Has requested a summons
+--   REQUEST   -- Has requested a summon
 --   SUMMONED  -- Has been/is being summoned by a warlock 
 --   CLOSE     -- Has requested but is nearby
 --   OUTZONE   -- Has requested but we are in an instance and they are not in it with us
@@ -162,7 +162,7 @@ end
 -- ===============================================================================
 
 function SummonsMonitor_OnLoad() 
-  SummonsMonitor_StatusMessage("Summons Monitor -- by Zayla.");
+  SummonsMonitor_StatusMessage("Summons Monitor by Zayla - NimbixEdit v2.");
 
   -- Set up "slash" commands
   SLASH_SUMMONSMONITOR1 = "/SummonsMonitor";
@@ -347,21 +347,21 @@ end
 function SummonsMonitor_IsSummonsRequest(lmsg, lspeaker) 
 
   if ((lmsg == "summon") or
-      (lmsg == "sumon") or
-	  string.find(lmsg,"сумон" ) or
-	  string.find(lmsg,"суман" ) or
-	  string.find(lmsg,"суммон" ) or
-	  string.find(lmsg,"сумман" ) or
-	  string.find(lmsg,"самон" ) or
-	  string.find(lmsg,"саман" ) or
-	  string.find(lmsg,"саммон" ) or
-	  string.find(lmsg,"самман" ) or
-      string.find(lmsg,"summon me" ) or
+      (lmsg == "Healthstone") or
+	  string.find(lmsg,"Kann ich ein summon bekommen" ) or
+	  string.find(lmsg,"hs" ) or
+	  string.find(lmsg,"heilstein" ) or
+	  string.find(lmsg,"summon bitte" ) or
+	  string.find(lmsg,"sum plz" ) or
+	  string.find(lmsg,"gesundheitsstein" ) or
+	  string.find(lmsg,"Summon" ) or
+	  string.find(lmsg,"123" ) or
+      string.find(lmsg,"gs" ) or
       string.find(lmsg,"summonme"  ) or
       string.find(lmsg,"sumon"  ) or
-      string.find(lmsg,"summone me") or
+      string.find(lmsg,"missgeburt") or
       string.find(lmsg,"summon pls") or
-      string.find(lmsg,"summon plz") or
+      string.find(lmsg,"summ") or
       string.find(lmsg,"wtb summon") or
       string.find(lmsg,"summon please")) then
     return lspeaker;
@@ -388,7 +388,7 @@ end
 function SummonsMonitor_IsSummonsNotice(lmsg, lspeaker) 
 
   if (string.find(lmsg,"summoning") or
-      (string.find(lmsg,"summon") and string.find(lmsg,"click")) or
+      (string.find(lmsg,"summoning") and string.find(lmsg,"click")) or
       (string.find(lmsg,"portal") and string.find(lmsg,"click"))) then
     local t,n;
     for t in string.gfind(lmsg, "%S+") do
@@ -583,7 +583,7 @@ function SummonsMonitor_MainWindow_ToggleVisible()
 end
 
 function SummonsMonitor_MainWindow_Show()
-  SummonsMonitor_MainWindow_Title:SetText("Summons Monitor -- by Zayla");
+  SummonsMonitor_MainWindow_Title:SetText("Summons Monitor by Zayla - NimbixEdit v2");
   ShowUIPanel(SummonsMonitor_MainWindow);
   SummonsMonitor_BuildWidgetList();
   SummonsMonitor_UpdateUIList()

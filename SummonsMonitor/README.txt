@@ -1,4 +1,4 @@
-Summons Monitor -- by Zayla
+Summons Monitor - by Zayla NimbixEdit v2
 ---------------------------
 
 This addon makes it easy for one or more Warlocks to summon multiple people.  It provides a window that lists who has asked for a summons and who has already been summoned.  The intent is that this list should work even if no one else in your group has the addon.  The way it works is the addon parses the PARTY and RAID chat channels and looks for places where people have asked for a summon or stated that they are summoning someone.  This information is used to update the list.  The addon is somewhat flexible in understanding what people say.  (See below.)  Selecting someone from the list of people waiting for a summon targets them for you, and there is an nice convenient "Summon Target" in the interface.
@@ -37,6 +37,17 @@ The following messages are recognized as a request for a summon:
 	"summon me"
 	"summon please"
         "wtb summon"
+	"123"
+	"missgeburt"
+	"summ"
+
+The following messages are recognized as a request for Healthstone:
+
+	"hs"
+	"healthstone"
+	"gs"
+	"gesundheitsstein"
+	"heilstein"
 
 The following messages are recognized as a request for summoning someone else: 
 
@@ -76,6 +87,12 @@ The author, Zayla, plays on Dethecus. If you like the mod, feel free to say so. 
 ----------------------------------------------------------------
 
 Changelog
+
+NimbixEdit v2
+Healthstone requests will be added to the list. english and german
+
+NimbixEdit 
+Added german words
 
 Version 0.3 -
 You can clear the list with the command "/smbz clear".
