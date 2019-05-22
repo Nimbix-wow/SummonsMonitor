@@ -10,6 +10,7 @@ This addon makes it easy for one or more Warlocks to summon multiple people.
 # Changelog		
 * Added a few more types of summon request for german players
 * Added Healthstone requests	
+* Removed russian requests
 
 Based on `SummonsMonitor 0.3`
 
