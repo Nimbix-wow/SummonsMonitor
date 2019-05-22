@@ -1,5 +1,5 @@
 # SummonsMonitor
-This addon makes it easy for one or more Warlocks to summon multiple people.
+This addon makes it easy for one or more Warlocks to summon multiple people and list players who need Healthstones.
 
 # Original creator
 [Zayla](https://wow.curseforge.com/addons/project-2478/)
