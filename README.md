@@ -9,7 +9,7 @@ This addon makes it easy for one or more Warlocks to summon multiple people.
 
 # Changelog
 * Added Clear button		
-* Added a few more types of summon request are recognized german players
+* Added a few more types of summon request for german players
 * Added Healthstone requests
 * Changed default summon message: < name > under summoning! ASSIST ME		
 * Changed default soulstone message: < name > under soulstoning!	
