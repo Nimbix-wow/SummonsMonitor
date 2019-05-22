@@ -13,7 +13,7 @@ This addon makes it easy for one or more Warlocks to summon multiple people.
 
 Based on `SummonsMonitor 0.3`
 
-# Instalation
+# Installation
 Put `SummonsMonitor` folder to `World of Warcraft\Interface\AddOns`
 
 # Detailed description
